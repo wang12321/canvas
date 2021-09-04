@@ -6,7 +6,7 @@
 export default {
   name: 'Layout',
   meta: {
-    title: 'canvas基础',
+    title: 'canvas进阶',
     icon: 'form',
     permissionArray: [1, 2, 3],
     sortIndex: 1,

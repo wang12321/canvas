@@ -48,36 +48,7 @@ export default {
         object_id: '',
         datePicker: []
       },
-      tableData: [{
-        'union_id': 53686,
-        'union_name': '都昌乐娱联盟',
-        'club_id': 150625,
-        'club_name': '都昌开心吧',
-        'user_id': 35625279,
-        'user_name': '余鱼',
-        'round_count': 8563,
-        'is_open': true
-      },
-      {
-        'union_id': 65886,
-        'union_name': '65886',
-        'club_id': 555520,
-        'club_name': '555520',
-        'user_id': 35392059,
-        'user_name': '用力活着',
-        'round_count': 8205,
-        'is_open': true
-      },
-      {
-        'union_id': 50955,
-        'union_name': '685',
-        'club_id': 459431,
-        'club_name': '459431',
-        'user_id': 38459088,
-        'user_name': '不开心',
-        'round_count': 6948,
-        'is_open': true
-      }],
+      tableData: [],
       tableColumn: [
         {
           label: '联赛昵称（ID）',
@@ -150,7 +121,7 @@ export default {
       'device'
     ]),
     pageData() {
-      return { total: this.total, page: 1, rows: 20 }
+      return { total: this.total, page: 1, rows: 5 }
     },
     formOptions() {
       return [
