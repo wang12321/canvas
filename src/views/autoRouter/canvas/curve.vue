@@ -52,16 +52,16 @@ export default {
     createLeaf(cxt, n, dx, dy, size, length) {
       cxt.beginPath()
       cxt.moveTo(dx, dy + size)
-      var degree = 2 * Math.PI / n
-      for (var i = 1; i < n + 1; i++) {
+      const degree = 2 * Math.PI / n
+      for (let i = 1; i < n + 1; i++) {
         // 计算控制点坐标
-        var cx1 = Math.sin((i - 1) * degree) * length + dx
-        var cy1 = Math.cos((i - 1) * degree) * length + dy
-        var cx2 = Math.sin(i * degree) * length + dx
-        var cy2 = Math.cos(i * degree) * length + dy
+        const cx1 = Math.sin((i - 1) * degree) * length + dx
+        const cy1 = Math.cos((i - 1) * degree) * length + dy
+        const cx2 = Math.sin(i * degree) * length + dx
+        const cy2 = Math.cos(i * degree) * length + dy
         // 计算结束点的坐标
-        var x = Math.sin(i * degree) * size + dx
-        var y = Math.cos(i * degree) * size + dy
+        const x = Math.sin(i * degree) * size + dx
+        const y = Math.cos(i * degree) * size + dy
         cxt.bezierCurveTo(cx1, cy1, cx2, cy2, x, y)
       }
       cxt.closePath()

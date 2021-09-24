@@ -27,12 +27,12 @@ export default {
       const cxt = cnv.getContext('2d')
       // 开始绘制图形
       // 定义数组，存储7种颜色
-      var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple']
+      const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple']
       cxt.lineWidth = 12
       cxt.translate(50, 0)
 
       // 循环绘制圆弧
-      for (var i = 0; i < colors.length; i++) {
+      for (let i = 0; i < colors.length; i++) {
         // 定义每次向下移动10px的变换矩阵
         cxt.translate(0, 10)
         // 定义颜色

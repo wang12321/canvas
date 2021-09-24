@@ -90,7 +90,7 @@ export default {
           // data[i + 0] = average // 红
           // data[i + 1] = average // 绿
           // data[i + 2] = average // 蓝
-          var grayscale = data[i] * 0.3 + data[i + 1] * 0.6 + data[i + 2] * 0.1
+          const grayscale = data[i] * 0.3 + data[i + 1] * 0.6 + data[i + 2] * 0.1
           data[i + 0] = grayscale // 红
           data[i + 1] = grayscale // 绿
           data[i + 2] = grayscale // 蓝

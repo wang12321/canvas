@@ -43,7 +43,7 @@ export default {
     // 五角星
     pentagram(cxt) {
       cxt.beginPath()
-      for (var i = 0; i < 5; i++) {
+      for (let i = 0; i < 5; i++) {
         cxt.lineTo(Math.cos((18 + i * 72) * Math.PI / 180) * 50 + 100,
           -Math.sin((18 + i * 72) * Math.PI / 180) * 50 + 100)
         cxt.lineTo(Math.cos((54 + i * 72) * Math.PI / 180) * 25 + 100,
@@ -111,8 +111,8 @@ export default {
       // 获取上下文环境对象context
       const cxtysjb = cnvysjb.getContext('2d')
       // 开始绘制图形
-      var r = 255; var g = 0; var b = 0
-      for (i = 0; i < 150; i++) {
+      let r = 255; let g = 0; let b = 0
+      for (let i = 0; i < 150; i++) {
         if (i < 25) {
           g += 10
         } else if (i > 25 && i < 50) {
@@ -135,8 +135,8 @@ export default {
       // 获取上下文环境对象context
       const cxtyshb = cnvyshb.getContext('2d')
       // 开始绘制图形
-      for (var i = 0; i < 6; i++) {
-        for (var j = 0; j < 6; j++) {
+      for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 6; j++) {
           cxtyshb.fillStyle = 'rgb(' + Math.floor(255 - 42.5 * i) + ',' + Math.floor(255 - 42.5 * j) + ',0)'
           cxtyshb.fillRect(j * 25, i * 25, 25, 25)
         }

@@ -115,6 +115,51 @@ export default [
     component: Layout,
     children: [
       {
+        path: 'BoundaryDetection',
+        name: 'BoundaryDetection',
+        meta: {
+          title: '边界检测',
+          icon: 'form',
+          permissionArray: [1, 2, 3],
+          sortIndex: 1,
+          newTime: '2022-05-20'
+        },
+        index: 10,
+        component: () =>
+          import('@/views/autoRouter/canvasAdvanced/BoundaryDetection.vue'),
+        children: []
+      },
+      {
+        path: 'CollisionDetection',
+        name: 'CollisionDetection',
+        meta: {
+          title: '碰撞检测',
+          icon: 'form',
+          permissionArray: [1, 2, 3],
+          sortIndex: 1,
+          newTime: '2022-05-20'
+        },
+        index: 10,
+        component: () =>
+          import('@/views/autoRouter/canvasAdvanced/CollisionDetection.vue'),
+        children: []
+      },
+      {
+        path: 'keyboardEvents',
+        name: 'keyboardEvents',
+        meta: {
+          title: '键盘事件',
+          icon: 'form',
+          permissionArray: [1, 2, 3],
+          sortIndex: 1,
+          newTime: '2022-05-20'
+        },
+        index: 10,
+        component: () =>
+          import('@/views/autoRouter/canvasAdvanced/keyboardEvents.vue'),
+        children: []
+      },
+      {
         path: 'mouseEvents',
         name: 'mouseEvents',
         meta: {
@@ -127,6 +172,35 @@ export default [
         index: 10,
         component: () =>
           import('@/views/autoRouter/canvasAdvanced/mouseEvents.vue'),
+        children: []
+      },
+      {
+        path: 'physicalAnimation',
+        name: 'physicalAnimation',
+        meta: {
+          title: '物理动画',
+          icon: 'form',
+          permissionArray: [1, 2, 3],
+          sortIndex: 1,
+          newTime: '2022-05-20'
+        },
+        index: 10,
+        component: () =>
+          import('@/views/autoRouter/canvasAdvanced/physicalAnimation.vue'),
+        children: []
+      },
+      {
+        path: 'tcs',
+        name: 'tcs',
+        meta: {
+          title: '贪吃蛇',
+          icon: 'form',
+          permissionArray: [1, 2, 3],
+          sortIndex: 1,
+          newTime: '2022-05-20'
+        },
+        index: 10,
+        component: () => import('@/views/autoRouter/canvasAdvanced/tcs.vue'),
         children: []
       }
     ]
@@ -185,23 +259,7 @@ export default [
         },
         index: 30,
         component: () => import('@/views/autoRouter/system/role_id/index.vue'),
-        children: [
-          {
-            path: 'testg',
-            name: 'testg',
-            meta: {
-              title: '角色管理1',
-              icon: 'form',
-              permissionArray: [1, 2, 3],
-              sortIndex: 3,
-              newTime: '2022-05-20'
-            },
-            index: 30,
-            component: () =>
-              import('@/views/autoRouter/system/role_id/testg.vue'),
-            children: []
-          }
-        ]
+        children: []
       }
     ]
   }

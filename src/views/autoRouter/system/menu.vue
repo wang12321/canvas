@@ -164,6 +164,12 @@ export default {
     // 分页
     reloadData() {
       this.updata()
+
+      const modal = window.document.getElementsByClassName('Modal')
+      // modal.classList.remove('Modal')
+      modal.removeAttribute('class')
+
+      modal
     },
     // 自定义合计
     getSummaries(param) {
